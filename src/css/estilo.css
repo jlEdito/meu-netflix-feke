@@ -1,0 +1,102 @@
+body{
+    font-family: 'poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+main:after{
+    content: '';
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.22413793103448276) 0%, rgba(0,0,0,0.45474137931034486) 30%, rgba(0,0,0,1) 100%);
+z-index: -1;
+}
+
+.conteudo{
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo .infomacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 25vh;
+    color: white;
+}
+.conteudo .infomacoes h2{
+    font-size: 15px;
+}
+
+.conteudo .infomacoes h3{
+    font-size: 15px;
+}
+
+.img img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.botao{
+    height: 50px;
+    width: 150px;
+    position: fixed;
+    top: 50vh;
+}
+
+.botao button{
+    background-color: red;
+    border: 0px;
+    height: 100%;
+    width: 100%;
+    border-radius: 4%;
+}
+
+.botao h1{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.botao button:hover{
+    background-color: rgb(216, 0, 0);
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 10px;
+    left: 15px;
+}
+
+.redes-sociais ul{
+    position: fixed;
+    top: 0;
+    left: 960px;
+    width: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.redes-sociais img{
+    filter: invert(1);
+    transition: 0.3s ease-in-out;
+}
+
+.redes-sociais img:hover{
+    transform: scale(1.5);
+}
